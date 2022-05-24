@@ -5,13 +5,6 @@
 # @Software: PyCharm
 # @Project : GestureMouse
 # @Description:获取屏幕分辨率:wmic path Win32_VideoController get CurrentHorizontalResolution,CurrentVerticalResolution
-"""
-注意一下，cvzone更新了！！
-hands, img = detector.findHands(img) 返回值hands的指尖坐标由原来的（x, y）变成（x, y, z）了
-lmList1 = hands[0]['lmList'] # 第一只手的关键点坐标信息变成了(x,y,z)
-比如，我们只需要用到食指的(x,y)坐标
-只需要将 lmList1[8] 改成 lmList1[8][0:2]
-"""
 
 import time
 import cv2
